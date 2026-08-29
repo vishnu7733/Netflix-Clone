@@ -7,7 +7,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 export default function Login() {
     const { openRegister, closeLogin } = useContext(authModalContext);
-    const [credentials, setCredentials ] = useState({});
+    const [credentials, setCredentials] = useState({});
     const [errorMessage, setErrorMessage] = useState(null);
     const handleInput = (e) => {
         const name = e.target.name;
@@ -17,7 +17,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const credential=await signInWithEmailAndPassword(auth, credentials.Email, credentials.Password);
+            const credential = await signInWithEmailAndPassword(auth, credentials.Email, credentials.Password);
             const user = credential.user;
             if (user) {
                 toast.success("Logged In Successfully");
@@ -43,7 +43,10 @@ export default function Login() {
             <div className="login-modal" onClick={(e) => e.stopPropagation()}>
                 <button className="auth-close" onClick={closeLogin}>×</button>
                 <h2>Login</h2>
+                 <h2 className="mx-0">Netflix Clone</h2>
+                    <p className="demo-notice">Demo project — not affiliated with Netflix</p>
                 <form onSubmit={handleSubmit} >
+                   
                     <input type="email" placeholder="Email" name="Email" onChange={handleInput} />
                     <input type="password" placeholder="Password" name="Password" onChange={handleInput} />
                     <button type="submit">Login</button>

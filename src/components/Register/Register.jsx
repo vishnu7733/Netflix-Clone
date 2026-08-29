@@ -8,7 +8,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 export default function Register() {
     const { closeRegister, openLogin } = useContext(authModalContext);
-    const[errorMessage,setErrorMessage]=useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
     const [user, setUser] = useState({});
     const handleInput = (e) => {
         const name = e.target.name;
@@ -85,7 +85,9 @@ export default function Register() {
                 <button className="auth-close" onClick={closeRegister}>×</button>
 
                 <h2>Register</h2>
-
+                <h2>Netflix Clone</h2>
+                <p className="demo-notice">Demo project — not affiliated with Netflix</p>
+                <h3>Create Account</h3>
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="Name" value={user.Name} onChange={handleInput} placeholder="Name" />
 
