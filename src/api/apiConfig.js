@@ -1,7 +1,7 @@
- import {VITE_apikey} from "../../.env";
+ 
  const apiConfig={
     baseUrl:"https://api.themoviedb.org/3/",
-    apiKey:VITE_apikey,
+    apiKey:import.meta.env.VITE_apikey,//user your own tmbd api here 
     originalImage: (imgPath) =>
         `https://image.tmdb.org/t/p/original${imgPath}`,
 

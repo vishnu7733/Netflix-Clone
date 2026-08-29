@@ -9,13 +9,13 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDZdktoGNUFvEIsp7SPpDxoQfXw7RIM3F8",
-  authDomain: "netflix-clone-164e8.firebaseapp.com",
-  projectId: "netflix-clone-164e8",
-  storageBucket: "netflix-clone-164e8.firebasestorage.app",
-  messagingSenderId: "301374408159",
-  appId: "1:301374408159:web:4e9dc708176a237e99f06a",
-  measurementId: "G-2XSFYC59M1"
+  apiKey: import.meta.env.VITE_firebaseApiKey,//user your own api here 
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
+  measurementId: import.meta.env.VITE_measurementId
 };
 
 // Initialize Firebase
@@ -23,3 +23,4 @@ const firebaseConfig = {
  export default app;
  export const auth=getAuth();
  export const db=getFirestore(app);
+
