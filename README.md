@@ -1,16 +1,62 @@
-# React + Vite
+# 🎬 Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Netflix-inspired web application built using React.js. The application allows users to browse movies and TV shows, view detailed information, watch trailers, search for content, and manage a personal wishlist using Firebase Authentication and Firestore.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🎥 Browse movies and TV shows
+- 🔍 Search movies and TV shows
+- 📄 View detailed movie/TV show information
+- 🎭 Display cast and crew information
+- ▶️ Watch trailers and teasers
+- 🔐 User registration and login
+- 🚪 User logout
+- ❤️ Add and remove movies/TV shows from wishlist
+- ☁️ Store wishlist data using Firebase Firestore
+- 👤 Firebase Authentication
+- 📱 Responsive design for desktop and mobile
+- 🪟 Login and registration modals using React Portals
+- 🔔 Toast notifications for user actions
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Bootstrap
+- Firebase Authentication
+- Firebase Firestore
+- Axios
+- React Toastify
+- TMDB API
+- React Portals
+- Vite
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+│   ├── Header/
+│   ├── Register/
+│   ├── Login/
+│   ├── Details/
+│   ├── ...
+│
+├── Firebase/
+│   └── firebase.js
+│
+├── App.jsx
+├── AuthModal.jsx
+├── main.jsx
+└── index.css
+
+public/
+│
+.env
+.gitignore
+package.json
+package-lock.json
+vite.config.js
+README.md
