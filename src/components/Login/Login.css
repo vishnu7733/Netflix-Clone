@@ -1,0 +1,90 @@
+
+.login-modal{
+    position:relative;
+    width:90%;
+    max-width:420px;
+    padding:35px;
+    background:#181818;
+    color:#fff;
+    border: #e50914 0.5px solid;
+    border-radius:12px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.7);
+}
+
+.login-modal h2{
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.login-modal form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.login-modal input{
+    width:100%;
+    padding:13px 15px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    background:#333;
+    color:#fff;
+}
+
+.login-modal input::placeholder{
+    color:#aaa;
+}
+
+.login-modal form button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:5px;
+    background:#e50914;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.login-modal form button:hover{
+    background:#f40612;
+}
+
+.auth-close{
+    position:absolute;
+    top:12px;
+    right:12px;
+    width:32px;
+    height:32px;
+    border:none;
+    border-radius:50%;
+    background:transparent;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.auth-close:hover{
+    background:#333;
+}
+
+.login-modal p{
+    margin-top:20px;
+    text-align:center;
+    color:#aaa;
+}
+
+.login-modal p button{
+    margin-left:5px;
+    border:none;
+    background:none;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.login-modal p button:hover{
+    text-decoration:underline;
+}

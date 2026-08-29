@@ -1,0 +1,279 @@
+.info{
+      position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.sm-info{
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}    
+.info-overlay{
+    position:absolute;
+    z-index:0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 70%;
+    background: linear-gradient(0deg,
+    rgba(0,0,0,1)0%,
+    rgba(0,0,0,0.9)25%,
+    rgba(0,0,0,0.5)50%,
+    rgba(0,0,0,0)100%);
+    
+
+}
+.info-poster{
+    
+    z-index: 1;
+    display: block;
+}
+.description{
+    color:white;
+    z-index:1;
+}
+.poster{
+    overflow: hidden;
+    border-radius: 24px;
+    width: 240px;
+}
+.info{
+    padding:7% 5% 0% 5%;
+}
+.title h2{
+     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.sm-title{
+    
+    z-index:2;
+}
+.sm-title h2{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    
+    
+}
+.sm-overview-heading{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.overview p{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.sm-overview p{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Inter", sans-serif;
+
+    
+}
+.details-btns .watch-btn {
+    background: #ff0000;
+    color: white;
+    padding: 14px 38px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.details-btns .trailer-btn,.wishlist-btn {
+    background: transparent;
+    color: white;
+    padding: 14px 38px;
+    border: 2px solid white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.6s ease;
+}
+
+.details-btns .trailer-btn:hover,.wishlist-btn:hover {
+    background: white;
+    color: black;
+}
+.details-btns .watch-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+.sm-details-btns{
+    z-index: 2;
+}
+.sm-details-btns .sm-watch-btn {
+    background: #ff0000;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.sm-details-btns .sm-trailer-btn {
+    background: transparent;
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.sm-details-btns .sm-trailer-btn:hover {
+    background: white;
+    color: black;
+}
+.sm-details-btns .sm-watch-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+.genres .item:hover{
+    border-color: #ff0000;
+    cursor: pointer;
+    color: #ff0000;
+}
+.genres .item{
+    border: 2px solid white;
+    font-family: "Inter", sans-serif;
+}
+.cast-and-crew-heading{
+     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    
+}
+.cast-and-crew-slider{
+    scrollbar-width: none;
+}
+.cast-and-crew-slider::-webkit-scrollbar{
+    display: none;
+}
+.cast-and-crew-poster-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cast-and-crew-poster-wrapper > img{
+    width:150px;
+}
+.cast-and-crew-poster-wrapper:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+.cast-and-crew-role ,.cast-and-crew-name {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+.video-card{
+    width:300px;
+    flex-shrink:0;
+}
+
+.video-thumbnail{
+    position:relative;
+    border-radius:10px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.video-thumbnail img{
+    width:100%;
+    display:block;
+}
+.details-heading{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.6);
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.video-title{
+    margin-top:10px;
+    color:#fff;
+    font-weight:600;
+}
+
+.video-type{
+    color:#aaa;
+    font-size:14px;
+}
+.video-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.video-modal-content{
+    position:relative;
+    width:80%;
+    max-width:1000px;
+    aspect-ratio:16/9;
+    background:#000;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.video-modal-content iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+.video-close-btn{
+    position:absolute;
+    top:25px;
+    right:12px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    z-index:2;
+}
+
+.video-close-btn:hover{
+    background:#e50914;
+}
+.sm-wishlist-btn{
+    color:white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.sm-wishlist-btn:hover{
+    color:red;
+    
+}

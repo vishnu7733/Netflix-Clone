@@ -1,0 +1,61 @@
+.remove-defaults{
+    all:unset;
+}
+.title-heading{
+    color: white;
+    font-family: "Montserrat", sans-serif; 
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.catalog-btn{
+    border:1px solid white;
+    padding:10px 15px; 
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.card-poster-wrapper >img{
+    width:175px;
+}
+.card-slides{
+    scrollbar-width: none;
+}
+.card-slides::-webkit-scrollbar{
+    display: none;
+}
+.item-title{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card-poster-wrapper >img{
+    width:175px;
+}
+.card-poster-wrapper:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.card-poster-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media(min-width:200px)and (max-width:600px){
+    .title-heading{
+    
+    font-family: "Montserrat", sans-serif; 
+    font-size: 1rem;
+  
+}
+.card-poster-wrapper >img{
+    width:125px;
+}
+.catalog-btn{
+    border:1px solid white;
+    padding:5px 10px; 
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+}
+}

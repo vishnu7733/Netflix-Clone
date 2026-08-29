@@ -1,0 +1,11 @@
+.app{
+    position: relative;
+}
+
+    .header{
+    position: fixed;
+    width: 100%;
+    z-index:99;
+    
+
+    }

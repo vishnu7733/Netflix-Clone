@@ -1,0 +1,160 @@
+.hero-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.75) 40%,
+            rgba(0, 0, 0, 0.4) 100%);
+    z-index: 0;
+}
+
+.sm-overlay {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 40%;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.9) 25%,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0) 100%);
+
+    z-index: 1;
+}
+
+.hero-title {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.hero-overview {
+    max-width: 650px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Inter", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.watch-btn {
+    background: #ff0000;
+    color: white;
+    padding: 14px 38px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.watch-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+.trailer-btn {
+    background: transparent;
+    color: white;
+    padding: 14px 38px;
+    border: 2px solid white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.trailer-btn:hover {
+    background: white;
+    color: black;
+}
+
+.poster-wrapper {
+    width: 340px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.poster-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.poster-wrapper:hover .poster-img {
+    transform: scale(1.05);
+}
+
+.btns {
+    top: 80%;
+}
+
+@media (max-width:991px) {
+    .watch-btn {
+        padding: 10px 25px;
+    }
+
+    .trailer-btn {
+        padding: 10px 25px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .hero-title,
+    .hero-overview,
+    .hero-btns,
+    .poster-wrapper {
+        opacity: 0;
+    }
+
+    .hero-title.active {
+        animation: slideUp 1s ease forwards;
+    }
+
+    .hero-overview.active {
+        animation: slideUp 1s ease 0.5s forwards;
+    }
+
+    .hero-btns.active {
+        animation: slideUp 1s ease 1s forwards;
+    }
+
+    .poster-wrapper.active {
+        animation: zoomIn 1s ease forwards;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translate3d(0, 50px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
