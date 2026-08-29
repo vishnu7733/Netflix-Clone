@@ -19,7 +19,7 @@ function App() {
   return (
     
     <div className='app'>
-    <BrowserRouter>
+    <BrowserRouter basename='/Netflix-Clone'>
     <Header/>
     <Routes>
       <Route path="/" element={<Home/>}/>;
