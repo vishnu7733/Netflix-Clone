@@ -147,8 +147,8 @@ export default function Details() {
                         ))}</div>
                         <div className="overview"><p>{item.overview.length < 220 ? item.overview : item.overview.substring(0, 220) + "..."}</p></div>
                         <div className="d-flex details-btns  gap-3">
-                            <button className="watch-btn btn rounded-pill" onClick={() => { if (user) { openLogin() } else { setSelectedVideo(trailer) } }}>Watch now</button>
-                            <button className="trailer-btn btn rounded-pill" onClick={() => { if (user) { openLogin() } else { setSelectedVideo(trailer) } }}>Watch trailer</button>
+                            <button className="watch-btn btn rounded-pill" onClick={() => { if (user) {  setSelectedVideo(trailer)} else {openLogin()} }}>Watch now</button>
+                            <button className="trailer-btn btn rounded-pill" onClick={() => { if (user) {  setSelectedVideo(trailer)} else {openLogin()} }}>Watch trailer</button>
                             {Wishlist_item?<button className="wishlist-btn btn rounded-pill" onClick={() => { removeFromWishlist(item) }} >Remove from Wishlist</button>:
                             <button className="wishlist-btn btn rounded-pill" onClick={() => { addToWishlist(item) }} >Add to Wishlist</button>
                     }
